@@ -15,6 +15,8 @@
 
 int main(void)
 {
+    /******************************************************/
+    /* Set things up by loading the graph and printing it */
     int countVertices, countEdges;
 
     GetCounts(&countVertices,&countEdges);
@@ -27,4 +29,11 @@ int main(void)
     GetEdges(edges,countEdges);
     BuildAdjacency(vertices,edges,countVertices,countEdges);
     PrintVertices(vertices,countVertices);
+    /******************************************************/
+
+    /******************************************************/
+    /* Now, run Prim and print the results                */
+    int startNumber=3;    // pick a vertext to start, you can change this
+    MST_Prim(vertices, startNumber, countVertices);
+    /******************************************************/
 }

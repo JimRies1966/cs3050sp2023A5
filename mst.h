@@ -5,5 +5,6 @@
 // Types
 
 // Prototypes
+void MST_Prim(Vertex vertices[], int startNumber, int countVertices);
 
 #endif
